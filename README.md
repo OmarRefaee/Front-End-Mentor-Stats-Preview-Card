@@ -23,7 +23,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-<img src="./mobile_screenshot.png   " alt="drawing" width="375px"/>
+<img src="./mobile_screenshot.png" alt="drawing" width="375px"/>
 
 ### Links
 
