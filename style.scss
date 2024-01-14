@@ -1,0 +1,158 @@
+@use "./SCSS/global" as *;
+@use "./SCSS/variables" as *;
+@use "./SCSS/mixins" as *;
+
+body {
+    background-color: $main-background;
+    color: $main-heading-stats;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    @include breakpoints(large) {
+        justify-content: center;
+    }
+    @include breakpoints(medium) {
+        justify-content: center;
+    }
+    @include breakpoints(small) {
+        justify-content: center;
+    }
+}
+
+.card {
+    @include card();
+    @include breakpoints(large) {
+        height: 450px;
+        flex-direction: row-reverse;
+        width: 1111px;
+    }
+    @include breakpoints(medium) {
+        width: 87.5%;
+        height: 450px;
+        flex-direction: row-reverse;
+    }
+    width: 87.5%;
+    .image {
+        background-image: url("images/image-header-mobile.jpg");
+        background-size: cover;
+        height: 240px;
+        border-radius: $border-radius $border-radius 0 0;
+        @include breakpoints(large) {
+            width: 49%;
+            height: 100%;
+            border-radius: 0 $border-radius $border-radius 0;
+            background-image: url("images/image-header-desktop.jpg");
+        }
+        @include breakpoints(medium) {
+            width: 49%;
+            height: 100%;
+            border-radius: 0 $border-radius $border-radius 0;
+            background-image: url("images/image-header-desktop.jpg");
+        }
+        .overlay {
+            background-color: $accent;
+            width: 100%;
+            height: inherit;
+            mix-blend-mode: multiply;
+            border-radius: inherit;
+        }
+    }
+    .card-box {
+        padding: 20px;
+        @include breakpoints(large) {
+            width: 51%;
+            padding: 73px 111px 73px 73px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @include breakpoints(medium) {
+            width: 51%;
+            padding: 53px 81px 53px 53px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .title {
+            font-size: 29px;
+            @include breakpoints(large) {
+                font-size: 36px;
+                margin: 0;
+            }
+            span {
+                color: $accent;
+            }
+        }
+        .description {
+            color: $main-paragraph;
+            line-height: 1.6;
+            letter-spacing: 0.3px;
+            font-size: 15px;
+            padding: 0px 5px;
+            @include breakpoints(large) {
+                margin: 25px 0;
+                padding: 0;
+            }
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include breakpoints(large) {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 25px;
+            }
+            @include breakpoints(medium) {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 25px;
+            }
+            @include breakpoints(small) {
+                flex-direction: row;
+                margin-top: 25px;
+            }
+            .stat {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+                @include breakpoints(large) {
+                    text-align: left;
+                    padding: 0;
+                    margin: 15px 15px 0 0;
+                }
+                @include breakpoints(medium) {
+                    text-align: left;
+                    padding: 0;
+                    margin: 15px 15px 0 0;
+                }
+                .num {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $main-heading-stats;
+                }
+                .text {
+                    font-size: 12px;
+                    color: $stat-headings;
+                    letter-spacing: 1.5px;
+                    font-weight: 400;
+                    padding-top: 10px;
+                    font-family: "Lexend Deca", sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    @include footer();
+    @include breakpoints(large) {
+        position: absolute;
+        bottom: 80px;
+    }
+}
