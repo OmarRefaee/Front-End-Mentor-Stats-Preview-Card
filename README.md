@@ -23,12 +23,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-<img src="./mobile_screenshot.png" alt="drawing" width="375px"/>
+<img src="./mobile_screenshot.png   " alt="drawing" width="375px"/>
 
 ### Links
 
--   Solution URL: [Solution URL](https://your-solution-url.com)
--   Live Site URL: [Live Site URL](https://your-live-site-url.com)
+-   Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/stats-preview-card-html-scss-RSJQq89yoG)
+-   Live Site URL: [Live Site URL](https://stats-preview-card-or.netlify.app/)
 
 ## My process
 
